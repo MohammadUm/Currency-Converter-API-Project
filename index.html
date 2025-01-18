@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css " /><!-- To add icons we use (font awesome cdn)-->
+    
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Currency Converter</h2>
+        <form>
+            <div class="amount">
+                <p><i>Enter Amount</i></p>
+              <input value="100" type="text">  <!-- //initially we have given the value to 100 -->
+            </div>
+            <div class="dropdown"><!-- In drop class down we are having 2 currencies (From dollar ) and (To Indian Rupees) -->
+            <div class="from">
+                <p>from</p>
+                <div class="select-container"><!-- select container will be having dropdown and to use dropdown we use select element -->
+
+                    <img src="https://flagsapi.com/US/flat/64.png" alt="Flags Image"><!--https://flagsapi.com/-->
+
+                   <select name="from"><!-- select element name will be from -->
+                   <!-- <option value="USD">USD</option>
+                   <option value="INR">INR</option>
+                   <option value="EUR">EUR</option>
+                   <option value="AUD">AUD</option> -->
+                  </select>
+                </div>
+            </div>
+
+            <i class="fa-solid fa-arrow-right-arrow-left"></i><!-- taken from font awesome google-->
+
+              <div class="to">
+                     <p>To</p>
+                <div class="select-container"><!-- select container will be having dropdown and to use dropdown we use select element -->
+                        <img src="https://flagsapi.com/IN/flat/64.png" alt="Flags Image"><!--https://flagsapi.com/-->
+                        <select name="to"><!-- select element name will be from -->
+                   <!-- <option value="USD">USD</option>
+                   <option value="INR" selected>INR</option>// To show INR in options we have used selected-->
+                   <!-- <option value="EUR">EUR</option>
+                   <option value="AUD">AUD</option>  -->
+                 </select>
+              </div>
+              </div>
+         </div>
+            <div class="msg">1 USD = 83.71 INR</div><!-- to show basic information -->
+            <br>
+            <button><i>Get Exchange Rate</i></button>
+            <!--its form's default behaviour when ever we will click on button it will refresh the page-->
+        </form>
+    </div>
+    <script src="country-list.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+

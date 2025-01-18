@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;/* all item will come to the center of the page*/
+    background-color:rgb(215, 235, 186);
+    
+}
+.container{
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 300px;
+    
+
+}
+form{
+    margin:2rem 0 2rem 0
+}
+form,select,button,input{
+    width: 100%;
+    border: none; /*border of the form select button and input will dissapear */
+    outline: none;
+    border-radius: 0.75rem;
+      /*The above styling will applied to form,select,button and input */
+}
+
+form input{
+
+    border: 1px solid lightgray;
+    font-size: 1rem;
+    height: 3rem;
+    padding-left: 0.5rem;
+}
+
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2rem;
+}
+.dropdown i{
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.select-container img{
+    max-width: 5rem;
+}
+.select-container{
+   display: flex;   /*by using display flex image and dropdown will come in same line */ 
+   background-color: red; /*We have given background color to understand our first box and second box */ 
+   justify-content: center;
+   align-items: center;
+   border-radius: 0.5rem;/* border radius will be added bith the boxes and dropdown*/
+   border: 1px solid lightgray;
+}
+.select-container select{
+    font-size: 1rem;
+    width: auto;
+}
+.msg{
+    margin: 2rem 0 2rem 0;
+}
+form button{
+    height: 3rem;
+    background-color: #e37c44;
+    color: #fff;
+     font-size: 1.15rem;
+    cursor: pointer; /* whenever we will hover the cursor will change */
+}
